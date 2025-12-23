@@ -41,6 +41,7 @@ function LoginPage(){
                 <br />
                 <input type="submit" />
             </form>
+            <h4>Nếu chưa có tài khoản, vui lòng đăng ký tại đây: <Link to='/register'>Đăng ký</Link></h4>
         </div>
     )
 }

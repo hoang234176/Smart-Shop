@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import LoginPage from '../auth/LoginPage.jsx'
+import RegisterPage from '../auth/RegisterPage.jsx'
 import App from '../App.jsx'
 
 function AppRoutes(){
@@ -7,6 +8,7 @@ function AppRoutes(){
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path='/register' element={<RegisterPage />} /> 
         </Routes>
     )
 }
