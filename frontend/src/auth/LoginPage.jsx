@@ -2,15 +2,15 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 function LoginPage(){
-    const [username, setUsername] = useState('')
+    const [numberPhone, setNumberPhone] = useState('')
     const [password, setPassword] = useState('')
     
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(username, password)
-        if (username === 'hoang' && password === '123456') {
+        console.log(numberPhone, password)
+        if (numberPhone === '0123456789' && password === '123456') {
             navigate('/')
         }
         else {
@@ -23,12 +23,12 @@ function LoginPage(){
             <Link to='/'>Trang chủ</Link>
             <h1>Đăng nhập</h1>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="username">Tên đăng: </label>
+                <label htmlFor="numberPhone">Số điện thoại </label>
                 <input 
                     type="text"
-                    name="username"
-                    onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Tên đăng nhập"
+                    name="numberPhone"
+                    onChange={(e) => setNumberPhone(e.target.value)}
+                    placeholder="Số điện thoại"
                 />
                 <br />
                 <label htmlFor="">Mật khẩu: </label>
