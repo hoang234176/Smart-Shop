@@ -20,7 +20,6 @@ function LoginPage(){
 
     return (
         <div>
-            <Link to='/'>Trang chủ</Link>
             <h1>Đăng nhập</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="numberPhone">Số điện thoại </label>

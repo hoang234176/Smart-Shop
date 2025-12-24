@@ -1,0 +1,53 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-container :hover {
+  color: rgb(18, 39, 69)
+}
+
+.logo-container img {
+  height: 50px;
+  width: auto;
+}
+
+.shop-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(45, 152, 168);
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}

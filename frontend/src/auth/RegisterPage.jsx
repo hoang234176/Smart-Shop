@@ -27,7 +27,6 @@ function RegisterPage(){
 
     return (
         <div>
-            <Link to='/'>Trang chủ</Link>
             <h1>Đăng ký</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="fullName">Họ và Tên: </label>
